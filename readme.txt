@@ -1,4 +1,8 @@
 === Generate PDF using Contact Form 7 ===
+=== FORK DE ALLINAPPLI ===
+- add a WordPress filter in Cf7_Pdf_Generation_Front_Action class for add a conditionnal filter for send a PDF on CF7 forms
+
+
 Contributors: zealopensource
 Donate link: http://www.zealousweb.com/payment/
 Tags: contact form, contact, PDF, email
