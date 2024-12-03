@@ -83,10 +83,6 @@ if ( !class_exists( 'Cf7_Pdf_Generation_Front_Action' ) ){
 			$posted_data = $submission->get_posted_data();
 
 			$uploaded_files = $submission->uploaded_files();
-            
-            // custom filter for add a condition with posted data of CF7
-            $filter_posted_data = apply_filters('filter_posted_data',$value = true,$posted_data);
-            // end custom filter
 
             $contact_id = $wpcf->id();
 		    $setting_data = get_post_meta( $contact_id, 'cf7_pdf', true );
@@ -119,10 +115,16 @@ if ( !class_exists( 'Cf7_Pdf_Generation_Front_Action' ) ){
 				setcookie( 'wp-enable_pdf_link', $cf7_pdf_link_is_enable, time() + (86400 * 1), "/");  
 			}
           
-          // generate PDF when $filter_posted_data data is true
-			if( isset($setting_data['cf7_opt_is_enable']) && $setting_data['cf7_opt_is_enable'] == 'true' && $filter_posted_data == 'true' )
+   
+			if( isset($setting_data['cf7_opt_is_enable']) && $setting_data['cf7_opt_is_enable'] == 'true')
 			{
-				if( $setting_data['cf7_dettach_pdf'] == 'true' ||  $setting_data['cf7_pdf_link_is_enable'] == 'true' )
+              
+              // custom filter for add a condition with posted data of CF7
+              $filter_posted_data = apply_filters('filter_posted_data',$value = true,$posted_data);
+              // end custom filter
+              
+              // generate PDF when $filter_posted_data data is true
+				if( $setting_data['cf7_dettach_pdf'] == 'true' && $filter_posted_data == true ||  $setting_data['cf7_pdf_link_is_enable'] == 'true' )
 				{
 					if( isset($setting_data['cf7_opt_is_attach_enable']) && $setting_data['cf7_opt_is_attach_enable'] == 'true')
 					{
