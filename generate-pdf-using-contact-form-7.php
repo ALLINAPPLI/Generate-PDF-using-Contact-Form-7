@@ -12,16 +12,16 @@
  * @package           Cf7_Pdf_Generation
  *
  * @wordpress-plugin
- * Plugin Name:     Generate PDF using Contact Form 7
- * Plugin URI:      https://wordpress.org/plugins/generate-pdf-using-contact-form-7/
- * Description:     FORK ALL IN APPLI Generate PDF using Contact Form 7 Plugin provides an easier way to download document files, open the document file or send as an attachment after the successful form submit.
- * Version:         4.1.3
- * Author:          ZealousWeb
+ * Plugin Name:     FORK AIA Generate PDF using Contact Form 7
+ * Plugin URI:      https://all-in-appli.com/
+ * Description:     FORK ALL IN APPLI version 4.1.3 Generate PDF using Contact Form 7 Plugin provides an easier way to download document files, open the document file or send as an attachment after the successful form submit.
+ * Version:         1.0
+ * Author:          ALLINAPPLI
  * Author URI:      https://www.zealousweb.com/
- * Developer: 		The ZealousWeb Team
+ * Developer: 		ALLINAPPLI
  * Text Domain:     generate-pdf-using-contact-form-7
  * Domain Path:     /languages
- * Copyright: © 2009-2019 ZealousWeb Technologies.
+ * Copyright: © 2025 allinappli.
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  */
